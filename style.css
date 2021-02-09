@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+section {
+  height: 100%;
+  width: 100%;
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-box {
+  background-color: white;
+  height: 80%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.display {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  width: 100%;
+}
+.d1 {
+  height: 50%;
+  width: 100%;
+  color: grey;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.d2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+}
+.d2-res {
+  justify-self: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  min-width: min-content;
+}
+.d2-equal {
+  justify-self: flex-start;
+  width: 10%;
+  display: none;
+}
+.keys {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.fix {
+  flex: 1;
+  display: flex;
+}
+
+.sc1,
+.sc2 {
+  display: none;
+  border: none;
+  flex: none;
+}
+.c1,
+.c2,
+.c3,
+.c4 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.5);
+  border: black solid 1px;
+  cursor: pointer;
+}
+.fix div:hover,
+.not-fix div:hover {
+  background-color: blue;
+  font-weight: 900;
+  color: white;
+}
+#Basic,
+#Scientific {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+#Basic:hover,
+#Scientific:hover {
+  background-color: red;
+  font-weight: 900;
+  color: white;
+}
+
+@media screen and (min-width: 901px) {
+  .main-box {
+    height: 80%;
+    width: 30%;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .main-box {
+    height: 80%;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-box {
+    height: 100%;
+    width: 100%;
+  }
+}
