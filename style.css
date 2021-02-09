@@ -86,27 +86,27 @@ section {
   border: black solid 1px;
   cursor: pointer;
 }
-.fix div:hover,
-.not-fix div:hover {
-  background-color: blue;
-  font-weight: 900;
-  color: white;
-}
 #Basic,
 #Scientific {
   background-color: rgba(255, 0, 0, 0.5);
 }
-#Basic:hover,
-#Scientific:hover {
-  background-color: red;
-  font-weight: 900;
-  color: white;
-}
-
+/***********************************************************/
 @media screen and (min-width: 901px) {
   .main-box {
     height: 80%;
     width: 30%;
+  }
+  .fix div:hover,
+  .not-fix div:hover {
+    background-color: blue;
+    font-weight: 900;
+    color: white;
+  }
+  #Basic:hover,
+  #Scientific:hover {
+    background-color: red;
+    font-weight: 900;
+    color: white;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 900px) {
@@ -114,10 +114,34 @@ section {
     height: 80%;
     width: 40%;
   }
+  .fix div:hover,
+  .not-fix div:hover {
+    background-color: blue;
+    font-weight: 900;
+    color: white;
+  }
+  #Basic:hover,
+  #Scientific:hover {
+    background-color: red;
+    font-weight: 900;
+    color: white;
+  }
 }
 @media screen and (max-width: 600px) {
   .main-box {
     height: 100%;
     width: 100%;
+  }
+  .fix div:active,
+  .not-fix div:active {
+    background-color: blue;
+    font-weight: 900;
+    color: white;
+  }
+  #Basic:active,
+  #Scientific:active {
+    background-color: red;
+    font-weight: 900;
+    color: white;
   }
 }
